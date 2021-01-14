@@ -400,7 +400,7 @@ a {
 table {
   width: 100%; }
   table tr:nth-of-type(even) {
-    background: #fcf8ef; }
+    background: #fcfcfc; }
   table th {
     text-transform: uppercase;
     background: #faeed2; }
@@ -413,7 +413,7 @@ table {
 html {
   box-sizing: border-box;
   color: #54595F;
-  background-color: #fcf8ef; }
+  background-color: #FCFCFC; }
 
 body {
   padding: 0;
@@ -558,7 +558,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(#fcf8ef, #e4d2a0); }
+  background: linear-gradient(#999999, #FCFCFC); }
   @media screen and (max-width: 900px) {
     .blog-slide {
       height: 320px; } }
@@ -681,9 +681,9 @@ figure.highlight {
   padding: 0;
   width: 100%;
   margin: 0 0 1.5rem;
-  background-color: #fffaea;
+  background-color: #FCFCFC;
   color: #596E74;
-  border: 1px solid #e7dec3;
+  border: 1px solid #999999;
   overflow-x: auto; }
   figure.highlight table {
     width: auto;
@@ -691,7 +691,7 @@ figure.highlight {
     text-align: left; }
     figure.highlight table tr {
       border: none;
-      background-color: #fffaea; }
+      background-color: #FCFCFC; }
       figure.highlight table tr td {
         border: none;
         padding: 0;
