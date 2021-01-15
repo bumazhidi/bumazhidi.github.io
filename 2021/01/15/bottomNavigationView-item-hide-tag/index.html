@@ -75,14 +75,14 @@
         
   
     <h1 class="post-title">
-      <a href="/2021/01/14/hello-world/">
-        Hello World
+      <a href="/2021/01/15/bottomNavigationView-item-hide-tag/">
+        BottomNavigationView隐藏标签的问题
       </a>
     </h1>
   
 
 <div class="post-meta">
-  2021-01-14
+  2021-01-15
   
   
 </div>
@@ -91,15 +91,17 @@
     </div>
     <div class="post-detail">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>因为在新版本的BottomNavigationView中，mShiftingMode被删除，所以没办法通过反射控制是否隐藏BottomNavigationView未激活tab的标签。</p>
+<p>但是在新版本中同样新加了一个属性：<code>labelVisibilityMode</code></p>
+<p>这个属性有四个值：</p>
+<ul>
+<li>labeled</li>
+<li>selected</li>
+<li>unselected</li>
+<li>auto</li>
+</ul>
+<p>默认为auto，auto一般是3个显示，3个以上不显示。selected就是选中的展示，unselected反之。</p>
+<p>labeled就是全部显示了，默认的放大缩放效果依然存在，这里你需要考虑实际兼容问题。</p>
 
         <hr>
       
@@ -113,11 +115,11 @@
       
       <div class="post-more">
   
-    <div class="post-pre">
-      <span>上一篇</span>
-      <a href="/2021/01/14/about-high-frame/">Android高帧率手机引发的省电需求</a>
-    </div>
   
+  <div class="post-next">
+    <span>下一篇</span>
+    <a href="/2021/01/14/about-high-frame/">Android高帧率手机引发的省电需求</a>
+  </div>
   
 </div>
       
