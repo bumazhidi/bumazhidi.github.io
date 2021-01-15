@@ -66,8 +66,7 @@
 </nav>
     
     <main class="blog-main" style="margin-top: -150px">
-      
-    <article class="blog-post">
+      <article class="blog-post">
   
 
   <div class="post-content">
@@ -82,69 +81,53 @@
     </h1>
   
 
+<div class="post-meta">
+  2021-01-15
+  
+  
+</div>
+
       
     </div>
     <div class="post-detail">
       
-        <div class="detail-excerpt">
-          <p>因为在新版本的BottomNavigationView中，mShiftingMode被删除，所以没办法通过反射控制是否隐藏BottomNavigationView未激活tab的标签。</p>
+        <p>因为在新版本的BottomNavigationView中，mShiftingMode被删除，所以没办法通过反射控制是否隐藏BottomNavigationView未激活tab的标签。</p>
 <p>但是在新版本中新开放了一个属性：<code>labelVisibilityMode</code></p>
-          <p id="excerpt">
-            <a href="/2021/01/15/bottomnavigationview-item-hide-tag/" class="blog-post-link">
-              阅读更多
-            </a>
-          </p>
-          <hr>
-        </div>
+<a id="more"></a>
+
+<p>这个属性有四个值：</p>
+<ul>
+<li>labeled</li>
+<li>selected</li>
+<li>unselected</li>
+<li>auto</li>
+</ul>
+<p>默认为auto，auto一般是3个显示，3个以上不显示。selected就是选中的展示，unselected反之。</p>
+<p>labeled就是全部显示了，默认的放大缩放效果依然存在，这里你需要考虑实际兼容问题。</p>
+
+        <hr>
       
     </div>
 
     
+      
+    
 
+    
+      
+      <div class="post-more">
+  
+  
+  <div class="post-next">
+    <span>下一篇</span>
+    <a href="/2021/01/14/about-high-frame/">Android高帧率手机引发的省电需求</a>
+  </div>
+  
+</div>
+      
     
   </div>
 </article>
-
-
-    <article class="blog-post">
-  
-
-  <div class="post-content">
-    <div class="post-header">
-      
-        
-  
-    <h1 class="post-title">
-      <a href="/2021/01/14/about-high-frame/">
-        Android高帧率手机引发的省电需求
-      </a>
-    </h1>
-  
-
-      
-    </div>
-    <div class="post-detail">
-      
-        <div class="detail-excerpt">
-          <p>随着高帧率手机的普及，在很多APP内需要限制手机的帧率来进行省电优化。今天的例子就是视频（直播/点播）播放的软件。</p>
-          <p id="excerpt">
-            <a href="/2021/01/14/about-high-frame/" class="blog-post-link">
-              阅读更多
-            </a>
-          </p>
-          <hr>
-        </div>
-      
-    </div>
-
-    
-
-    
-  </div>
-</article>
-
-
-
 
     </main>
     
